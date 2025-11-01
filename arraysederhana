@@ -1,0 +1,30 @@
+package arraysederhana;
+import java.util.Scanner;
+
+public class ArraySederhana {
+
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        int[] nilai = new int[5];  // array untuk 5 nilai ujian mahasiswa
+        int total = 0;
+
+        System.out.println("Masukkan 5 nilai ujian mahasiswa:");
+
+        // a) Input manual
+        for (int i = 0; i < nilai.length; i++) {
+            System.out.print("Nilai ke-" + (i+1) + " = ");
+            nilai[i] = input.nextInt();
+        }
+
+        // b) Tampilkan semua nilai menggunakan for loop
+        System.out.println("\nDaftar Nilai Mahasiswa:");
+        for (int i = 0; i < nilai.length; i++) {
+            System.out.println("Nilai ke-" + (i+1) + " = " + nilai[i]);
+            total += nilai[i];  // hitung total sambil menampilkan
+        }
+
+        // c) Hitung rata-rata
+        double rataRata = (double) total / nilai.length;
+        System.out.println("\nRata-rata nilai = " + rataRata);
+    }
+}
