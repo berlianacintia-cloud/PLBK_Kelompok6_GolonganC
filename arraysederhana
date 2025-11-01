@@ -8,7 +8,7 @@ public class ArraySederhana {
         int[] nilai = new int[5];  // array untuk 5 nilai ujian mahasiswa
         int total = 0;
 
-	System.out.println("Masukkan nama mahasiswa:   ")
+	System.out.println("Masukkan 5 nama mahasiswa dengan lengkap:   ")
 
         System.out.println("Masukkan 5 nilai ujian mahasiswa:");
 
